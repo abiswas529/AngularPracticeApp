@@ -1,0 +1,24 @@
+<div class="homeWrapper">
+    <div>
+        <button class="button" (click)="pushRow()">Add User Group</button>
+        <button class="button" (click)="routeToNewPage()">Route to page</button>
+    </div>
+    <div class="width75">
+        <table>
+            <th>
+                Feature
+            </th>
+            <th>
+                Read
+            </th>
+            <th>
+                Write
+            </th>
+            <tr *ngFor="let item of rowArray">
+                <td>{{item.feature}}</td>
+                <td>{{item.Read}}</td>
+                <td>{{item.Write}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
